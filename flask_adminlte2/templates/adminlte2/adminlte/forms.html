@@ -2,11 +2,10 @@
 
 {% macro form_header(header, icon=None, is_modal=False) %}
     {% if is_modal %}
-        <h4 class="modal-title">{{ header }}</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
-
+        <h4 class="modal-title">{{ header }}</h4>
     {% else %}
         <h3 class="box-title">{% if icon %}<i class="{{ icon }}"></i> {% endif %}{{ header }}</h3>
     {% endif %}

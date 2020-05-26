@@ -4,9 +4,9 @@
 {% block body %}
     {# content added to modal-content #}
     <div class="modal-header">
-        {% block header %}<h3>{{ header_text }}</h3>{% endblock %}
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                 aria-hidden="true">&times;</span></button>
+        {% block header %}<h4>{{ header_text }}</h4>{% endblock %}
     </div>
     <div class="modal-body">
         {% block fa_form %}
